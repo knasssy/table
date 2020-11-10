@@ -4,10 +4,8 @@ body {
   font-family: sans-serif;
   background: #313131;
 }
-#viti{
-  position:relative;
-  right:-44%;
-  bottom: -3.4em;
+.asd{
+  text-align:center;
 }
 
 .box {

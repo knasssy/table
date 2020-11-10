@@ -13,5 +13,10 @@ def account():
     return render_template('kaf.html', title='Account')
 
 
+@app.route('/table')
+def table():
+    return render_template('kaf2.html', title='table')
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0")

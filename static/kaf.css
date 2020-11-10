@@ -1,5 +1,5 @@
 html{
-  background-image: url(C:/Users/Anastasiya/Desktop/kaf/asd3.jpg);
+  background-image: url('asd3.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
