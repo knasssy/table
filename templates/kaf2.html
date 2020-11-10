@@ -20,7 +20,14 @@
     </tr>
     <tr>
         <td>1 пара</td>
-        <td></td>
+        <td> {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
         <td></td>
         <td></td>
         <td></td>
