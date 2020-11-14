@@ -1,22 +1,20 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 import sqlite3
-from werkzeug.exceptions import abort
+
+
+# from ftplib import FTP
+#
+# ftp = FTP()
+# HOST = '192.168.255.250'
+# PORT = 21
+# ftp.connect(HOST, PORT)
+# ftp.login(user='ftpuser', passwd='ftpuser21')
 
 
 def get_db_connection():
     conn = sqlite3.connect('database.db')
     conn.row_factory = sqlite3.Row
     return conn
-
-
-def get_post(post_id):
-    conn = get_db_connection()
-    post = conn.execute('SELECT * FROM posts WHERE id = ?',
-                        (post_id,)).fetchone()
-    conn.close()
-    if post is None:
-        abort(404)
-    return post
 
 
 app = Flask(__name__)
@@ -54,128 +52,151 @@ def account():
 @app.route('/table1')
 def table1():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf1 = conn.execute('SELECT * FROM kaf1').fetchall()
     conn.close()
-    return render_template('kaf1.html', posts=posts)
+    return render_template('kaf1.html', kaf1=kaf1)
 
 
 @app.route('/table2')
 def table2():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf2 = conn.execute('SELECT * FROM kaf2 WHERE id = 1',
+                        ).fetchone()
     conn.close()
-    return render_template('kaf2.html', posts=posts)
+    return render_template('kaf2.html', kaf2=kaf2)
 
 
 @app.route('/table3')
 def table3():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf3 = conn.execute('SELECT * FROM kaf3').fetchall()
     conn.close()
-    return render_template('kaf3.html', posts=posts)
+    return render_template('kaf3.html', kaf3=kaf3)
 
 
 @app.route('/table4')
 def table4():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf4 = conn.execute('SELECT * FROM kaf4').fetchall()
     conn.close()
-    return render_template('kaf4.html', posts=posts)
+    return render_template('kaf4.html', kaf4=kaf4)
 
 
 @app.route('/table5')
 def table5():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf5 = conn.execute('SELECT * FROM kaf5').fetchall()
     conn.close()
-    return render_template('kaf5.html', posts=posts)
+    return render_template('kaf5.html', kaf5=kaf5)
 
 
 @app.route('/table6')
 def table6():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf6 = conn.execute('SELECT * FROM kaf6').fetchall()
     conn.close()
-    return render_template('kaf6.html', posts=posts)
+    return render_template('kaf6.html', kaf6=kaf6)
 
 
 @app.route('/table11')
 def table11():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf11 = conn.execute('SELECT * FROM kaf11').fetchall()
     conn.close()
-    return render_template('kaf11.html', posts=posts)
+    return render_template('kaf11.html', kaf11=kaf11)
 
 
 @app.route('/table12')
 def table12():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf12 = conn.execute('SELECT * FROM kaf12').fetchall()
     conn.close()
-    return render_template('kaf12.html', posts=posts)
+    return render_template('kaf12.html', kaf12=kaf12)
 
 
 @app.route('/table13')
 def table13():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf13 = conn.execute('SELECT * FROM kaf13').fetchall()
     conn.close()
-    return render_template('kaf13.html', posts=posts)
+    return render_template('kaf13.html', kaf13=kaf13)
 
 
 @app.route('/table21')
 def table21():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    # 1 class
+    kaf21_1 = conn.execute('SELECT * FROM kaf21 WHERE id = 1').fetchone()
+    kaf21_2 = conn.execute('SELECT * FROM kaf21 WHERE id = 2').fetchone()
+    kaf21_3 = conn.execute('SELECT * FROM kaf21 WHERE id = 3').fetchone()
+    kaf21_4 = conn.execute('SELECT * FROM kaf21 WHERE id = 4').fetchone()
+    kaf21_5 = conn.execute('SELECT * FROM kaf21 WHERE id = 5').fetchone()
+    # 2 class
+    kaf21_6 = conn.execute('SELECT * FROM kaf21 WHERE id = 6').fetchone()
+    kaf21_7 = conn.execute('SELECT * FROM kaf21 WHERE id = 7').fetchone()
+    kaf21_8 = conn.execute('SELECT * FROM kaf21 WHERE id = 8').fetchone()
+    kaf21_9 = conn.execute('SELECT * FROM kaf21 WHERE id = 9').fetchone()
+    kaf21_10 = conn.execute('SELECT * FROM kaf21 WHERE id = 10').fetchone()
+    # 3 class
+    kaf21_11 = conn.execute('SELECT * FROM kaf21 WHERE id = 11').fetchone()
+    kaf21_12 = conn.execute('SELECT * FROM kaf21 WHERE id = 12').fetchone()
+    kaf21_13 = conn.execute('SELECT * FROM kaf21 WHERE id = 13').fetchone()
+    kaf21_14 = conn.execute('SELECT * FROM kaf21 WHERE id = 14').fetchone()
+    kaf21_15 = conn.execute('SELECT * FROM kaf21 WHERE id = 15').fetchone()
+    # 4 class
+    kaf21_16 = conn.execute('SELECT * FROM kaf21 WHERE id = 16').fetchone()
+    kaf21_17 = conn.execute('SELECT * FROM kaf21 WHERE id = 17').fetchone()
+    kaf21_18 = conn.execute('SELECT * FROM kaf21 WHERE id = 18').fetchone()
+    kaf21_19 = conn.execute('SELECT * FROM kaf21 WHERE id = 19').fetchone()
+    kaf21_20 = conn.execute('SELECT * FROM kaf21 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf21.html', posts=posts)
+    return render_template('kaf21.html', kaf21_1=kaf21_1, kaf21_2=kaf21_2,
+                           kaf21_3=kaf21_3, kaf21_4=kaf21_4, kaf21_5=kaf21_5,
+                           kaf21_6=kaf21_6, kaf21_7=kaf21_7, kaf21_8=kaf21_8,
+                           kaf21_9=kaf21_9, kaf21_10=kaf21_10, kaf21_11=kaf21_11,
+                           kaf21_12=kaf21_12, kaf21_13=kaf21_13, kaf21_14=kaf21_14,
+                           kaf21_15=kaf21_15, kaf21_16=kaf21_16, kaf21_17=kaf21_17,
+                           kaf21_18=kaf21_18, kaf21_19=kaf21_19, kaf21_20=kaf21_20)
 
 
 @app.route('/table22')
 def table22():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf22 = conn.execute('SELECT * FROM kaf22').fetchall()
     conn.close()
-    return render_template('kaf22.html', posts=posts)
+    return render_template('kaf22.html', kaf22=kaf22)
 
 
 @app.route('/table23')
 def table23():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf23 = conn.execute('SELECT * FROM kaf23').fetchall()
     conn.close()
-    return render_template('kaf23.html', posts=posts)
+    return render_template('kaf23.html', kaf23=kaf23)
 
 
 @app.route('/table31')
 def table31():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf31 = conn.execute('SELECT * FROM kaf31').fetchall()
     conn.close()
-    return render_template('kaf31.html', posts=posts)
+    return render_template('kaf31.html', kaf31=kaf31)
 
 
 @app.route('/table32')
 def table32():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf32 = conn.execute('SELECT * FROM kaf32').fetchall()
     conn.close()
-    return render_template('kaf32.html', posts=posts)
+    return render_template('kaf32.html', kaf32=kaf32)
 
 
 @app.route('/table33')
 def table33():
     conn = get_db_connection()
-    posts = conn.execute('SELECT * FROM posts').fetchall()
+    kaf33 = conn.execute('SELECT * FROM kaf33').fetchall()
     conn.close()
-    return render_template('kaf33.html', posts=posts)
-
-
-# TODO ID => GROUP
-# @app.route('/table<int:post_id>')
-# def post(post_id):
-#     post = get_post(post_id)
-#     return render_template('kaf21.html', post=post)
+    return render_template('kaf33.html', kaf33=kaf33)
 
 
 if __name__ == '__main__':
