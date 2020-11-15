@@ -101,25 +101,112 @@ def table6():
 @app.route('/table11')
 def table11():
     conn = get_db_connection()
-    kaf11 = conn.execute('SELECT * FROM kaf11').fetchall()
+    # 1 class
+    kaf11_1 = conn.execute('SELECT * FROM kaf11 WHERE id = 1').fetchone()
+    kaf11_2 = conn.execute('SELECT * FROM kaf11 WHERE id = 2').fetchone()
+    kaf11_3 = conn.execute('SELECT * FROM kaf11 WHERE id = 3').fetchone()
+    kaf11_4 = conn.execute('SELECT * FROM kaf11 WHERE id = 4').fetchone()
+    kaf11_5 = conn.execute('SELECT * FROM kaf11 WHERE id = 5').fetchone()
+    # 2 class
+    kaf11_6 = conn.execute('SELECT * FROM kaf11 WHERE id = 6').fetchone()
+    kaf11_7 = conn.execute('SELECT * FROM kaf11 WHERE id = 7').fetchone()
+    kaf11_8 = conn.execute('SELECT * FROM kaf11 WHERE id = 8').fetchone()
+    kaf11_9 = conn.execute('SELECT * FROM kaf11 WHERE id = 9').fetchone()
+    kaf11_10 = conn.execute('SELECT * FROM kaf11 WHERE id = 10').fetchone()
+    # 3 class
+    kaf11_11 = conn.execute('SELECT * FROM kaf11 WHERE id = 11').fetchone()
+    kaf11_12 = conn.execute('SELECT * FROM kaf11 WHERE id = 12').fetchone()
+    kaf11_13 = conn.execute('SELECT * FROM kaf11 WHERE id = 13').fetchone()
+    kaf11_14 = conn.execute('SELECT * FROM kaf11 WHERE id = 14').fetchone()
+    kaf11_15 = conn.execute('SELECT * FROM kaf11 WHERE id = 15').fetchone()
+    # 4 class
+    kaf11_16 = conn.execute('SELECT * FROM kaf11 WHERE id = 16').fetchone()
+    kaf11_17 = conn.execute('SELECT * FROM kaf11 WHERE id = 17').fetchone()
+    kaf11_18 = conn.execute('SELECT * FROM kaf11 WHERE id = 18').fetchone()
+    kaf11_19 = conn.execute('SELECT * FROM kaf11 WHERE id = 19').fetchone()
+    kaf11_20 = conn.execute('SELECT * FROM kaf11 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf11.html', kaf11=kaf11)
+    return render_template('kaf11.html', kaf11_1=kaf11_1, kaf11_2=kaf11_2,
+                           kaf11_3=kaf11_3, kaf11_4=kaf11_4, kaf11_5=kaf11_5,
+                           kaf11_6=kaf11_6, kaf11_7=kaf11_7, kaf11_8=kaf11_8,
+                           kaf11_9=kaf11_9, kaf11_10=kaf11_10, kaf11_11=kaf11_11,
+                           kaf11_12=kaf11_12, kaf11_13=kaf11_13, kaf11_14=kaf11_14,
+                           kaf11_15=kaf11_15, kaf11_16=kaf11_16, kaf11_17=kaf11_17,
+                           kaf11_18=kaf11_18, kaf11_19=kaf11_19, kaf11_20=kaf11_20)
 
 
 @app.route('/table12')
 def table12():
     conn = get_db_connection()
-    kaf12 = conn.execute('SELECT * FROM kaf12').fetchall()
+    # 1 class
+    kaf12_1 = conn.execute('SELECT * FROM kaf12 WHERE id = 1').fetchone()
+    kaf12_2 = conn.execute('SELECT * FROM kaf12 WHERE id = 2').fetchone()
+    kaf12_3 = conn.execute('SELECT * FROM kaf12 WHERE id = 3').fetchone()
+    kaf12_4 = conn.execute('SELECT * FROM kaf12 WHERE id = 4').fetchone()
+    kaf12_5 = conn.execute('SELECT * FROM kaf12 WHERE id = 5').fetchone()
+    # 2 class
+    kaf12_6 = conn.execute('SELECT * FROM kaf12 WHERE id = 6').fetchone()
+    kaf12_7 = conn.execute('SELECT * FROM kaf12 WHERE id = 7').fetchone()
+    kaf12_8 = conn.execute('SELECT * FROM kaf12 WHERE id = 8').fetchone()
+    kaf12_9 = conn.execute('SELECT * FROM kaf12 WHERE id = 9').fetchone()
+    kaf12_10 = conn.execute('SELECT * FROM kaf12 WHERE id = 10').fetchone()
+    # 3 class
+    kaf12_11 = conn.execute('SELECT * FROM kaf12 WHERE id = 11').fetchone()
+    kaf12_12 = conn.execute('SELECT * FROM kaf12 WHERE id = 12').fetchone()
+    kaf12_13 = conn.execute('SELECT * FROM kaf12 WHERE id = 13').fetchone()
+    kaf12_14 = conn.execute('SELECT * FROM kaf12 WHERE id = 14').fetchone()
+    kaf12_15 = conn.execute('SELECT * FROM kaf12 WHERE id = 15').fetchone()
+    # 4 class
+    kaf12_16 = conn.execute('SELECT * FROM kaf12 WHERE id = 16').fetchone()
+    kaf12_17 = conn.execute('SELECT * FROM kaf12 WHERE id = 17').fetchone()
+    kaf12_18 = conn.execute('SELECT * FROM kaf12 WHERE id = 18').fetchone()
+    kaf12_19 = conn.execute('SELECT * FROM kaf12 WHERE id = 19').fetchone()
+    kaf12_20 = conn.execute('SELECT * FROM kaf12 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf12.html', kaf12=kaf12)
+    return render_template('kaf12.html', kaf12_1=kaf12_1, kaf12_2=kaf12_2,
+                           kaf12_3=kaf12_3, kaf12_4=kaf12_4, kaf12_5=kaf12_5,
+                           kaf12_6=kaf12_6, kaf12_7=kaf12_7, kaf12_8=kaf12_8,
+                           kaf12_9=kaf12_9, kaf12_10=kaf12_10, kaf12_11=kaf12_11,
+                           kaf12_12=kaf12_12, kaf12_13=kaf12_13, kaf12_14=kaf12_14,
+                           kaf12_15=kaf12_15, kaf12_16=kaf12_16, kaf12_17=kaf12_17,
+                           kaf12_18=kaf12_18, kaf12_19=kaf12_19, kaf12_20=kaf12_20)
 
 
 @app.route('/table13')
 def table13():
     conn = get_db_connection()
-    kaf13 = conn.execute('SELECT * FROM kaf13').fetchall()
+    # 1 class
+    kaf13_1 = conn.execute('SELECT * FROM kaf13 WHERE id = 1').fetchone()
+    kaf13_2 = conn.execute('SELECT * FROM kaf13 WHERE id = 2').fetchone()
+    kaf13_3 = conn.execute('SELECT * FROM kaf13 WHERE id = 3').fetchone()
+    kaf13_4 = conn.execute('SELECT * FROM kaf13 WHERE id = 4').fetchone()
+    kaf13_5 = conn.execute('SELECT * FROM kaf13 WHERE id = 5').fetchone()
+    # 2 class
+    kaf13_6 = conn.execute('SELECT * FROM kaf13 WHERE id = 6').fetchone()
+    kaf13_7 = conn.execute('SELECT * FROM kaf13 WHERE id = 7').fetchone()
+    kaf13_8 = conn.execute('SELECT * FROM kaf13 WHERE id = 8').fetchone()
+    kaf13_9 = conn.execute('SELECT * FROM kaf13 WHERE id = 9').fetchone()
+    kaf13_10 = conn.execute('SELECT * FROM kaf13 WHERE id = 10').fetchone()
+    # 3 class
+    kaf13_11 = conn.execute('SELECT * FROM kaf13 WHERE id = 11').fetchone()
+    kaf13_12 = conn.execute('SELECT * FROM kaf13 WHERE id = 12').fetchone()
+    kaf13_13 = conn.execute('SELECT * FROM kaf13 WHERE id = 13').fetchone()
+    kaf13_14 = conn.execute('SELECT * FROM kaf13 WHERE id = 14').fetchone()
+    kaf13_15 = conn.execute('SELECT * FROM kaf13 WHERE id = 15').fetchone()
+    # 4 class
+    kaf13_16 = conn.execute('SELECT * FROM kaf13 WHERE id = 16').fetchone()
+    kaf13_17 = conn.execute('SELECT * FROM kaf13 WHERE id = 17').fetchone()
+    kaf13_18 = conn.execute('SELECT * FROM kaf13 WHERE id = 18').fetchone()
+    kaf13_19 = conn.execute('SELECT * FROM kaf13 WHERE id = 19').fetchone()
+    kaf13_20 = conn.execute('SELECT * FROM kaf13 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf13.html', kaf13=kaf13)
+    return render_template('kaf13.html', kaf13_1=kaf13_1, kaf13_2=kaf13_2,
+                           kaf13_3=kaf13_3, kaf13_4=kaf13_4, kaf13_5=kaf13_5,
+                           kaf13_6=kaf13_6, kaf13_7=kaf13_7, kaf13_8=kaf13_8,
+                           kaf13_9=kaf13_9, kaf13_10=kaf13_10, kaf13_11=kaf13_11,
+                           kaf13_12=kaf13_12, kaf13_13=kaf13_13, kaf13_14=kaf13_14,
+                           kaf13_15=kaf13_15, kaf13_16=kaf13_16, kaf13_17=kaf13_17,
+                           kaf13_18=kaf13_18, kaf13_19=kaf13_19, kaf13_20=kaf13_20)
 
 
 @app.route('/table21')
@@ -162,41 +249,186 @@ def table21():
 @app.route('/table22')
 def table22():
     conn = get_db_connection()
-    kaf22 = conn.execute('SELECT * FROM kaf22').fetchall()
+    # 1 class
+    kaf22_1 = conn.execute('SELECT * FROM kaf22 WHERE id = 1').fetchone()
+    kaf22_2 = conn.execute('SELECT * FROM kaf22 WHERE id = 2').fetchone()
+    kaf22_3 = conn.execute('SELECT * FROM kaf22 WHERE id = 3').fetchone()
+    kaf22_4 = conn.execute('SELECT * FROM kaf22 WHERE id = 4').fetchone()
+    kaf22_5 = conn.execute('SELECT * FROM kaf22 WHERE id = 5').fetchone()
+    # 2 class
+    kaf22_6 = conn.execute('SELECT * FROM kaf22 WHERE id = 6').fetchone()
+    kaf22_7 = conn.execute('SELECT * FROM kaf22 WHERE id = 7').fetchone()
+    kaf22_8 = conn.execute('SELECT * FROM kaf22 WHERE id = 8').fetchone()
+    kaf22_9 = conn.execute('SELECT * FROM kaf22 WHERE id = 9').fetchone()
+    kaf22_10 = conn.execute('SELECT * FROM kaf22 WHERE id = 10').fetchone()
+    # 3 class
+    kaf22_11 = conn.execute('SELECT * FROM kaf22 WHERE id = 11').fetchone()
+    kaf22_12 = conn.execute('SELECT * FROM kaf22 WHERE id = 12').fetchone()
+    kaf22_13 = conn.execute('SELECT * FROM kaf22 WHERE id = 13').fetchone()
+    kaf22_14 = conn.execute('SELECT * FROM kaf22 WHERE id = 14').fetchone()
+    kaf22_15 = conn.execute('SELECT * FROM kaf22 WHERE id = 15').fetchone()
+    # 4 class
+    kaf22_16 = conn.execute('SELECT * FROM kaf22 WHERE id = 16').fetchone()
+    kaf22_17 = conn.execute('SELECT * FROM kaf22 WHERE id = 17').fetchone()
+    kaf22_18 = conn.execute('SELECT * FROM kaf22 WHERE id = 18').fetchone()
+    kaf22_19 = conn.execute('SELECT * FROM kaf22 WHERE id = 19').fetchone()
+    kaf22_20 = conn.execute('SELECT * FROM kaf22 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf22.html', kaf22=kaf22)
+    return render_template('kaf22.html', kaf22_1=kaf22_1, kaf22_2=kaf22_2,
+                           kaf22_3=kaf22_3, kaf22_4=kaf22_4, kaf22_5=kaf22_5,
+                           kaf22_6=kaf22_6, kaf22_7=kaf22_7, kaf22_8=kaf22_8,
+                           kaf22_9=kaf22_9, kaf22_10=kaf22_10, kaf22_11=kaf22_11,
+                           kaf22_12=kaf22_12, kaf22_13=kaf22_13, kaf22_14=kaf22_14,
+                           kaf22_15=kaf22_15, kaf22_16=kaf22_16, kaf22_17=kaf22_17,
+                           kaf22_18=kaf22_18, kaf22_19=kaf22_19, kaf22_20=kaf22_20)
 
 
 @app.route('/table23')
 def table23():
     conn = get_db_connection()
-    kaf23 = conn.execute('SELECT * FROM kaf23').fetchall()
+    # 1 class
+    kaf23_1 = conn.execute('SELECT * FROM kaf23 WHERE id = 1').fetchone()
+    kaf23_2 = conn.execute('SELECT * FROM kaf23 WHERE id = 2').fetchone()
+    kaf23_3 = conn.execute('SELECT * FROM kaf23 WHERE id = 3').fetchone()
+    kaf23_4 = conn.execute('SELECT * FROM kaf23 WHERE id = 4').fetchone()
+    kaf23_5 = conn.execute('SELECT * FROM kaf23 WHERE id = 5').fetchone()
+    # 2 class
+    kaf23_6 = conn.execute('SELECT * FROM kaf23 WHERE id = 6').fetchone()
+    kaf23_7 = conn.execute('SELECT * FROM kaf23 WHERE id = 7').fetchone()
+    kaf23_8 = conn.execute('SELECT * FROM kaf23 WHERE id = 8').fetchone()
+    kaf23_9 = conn.execute('SELECT * FROM kaf23 WHERE id = 9').fetchone()
+    kaf23_10 = conn.execute('SELECT * FROM kaf23 WHERE id = 10').fetchone()
+    # 3 class
+    kaf23_11 = conn.execute('SELECT * FROM kaf23 WHERE id = 11').fetchone()
+    kaf23_12 = conn.execute('SELECT * FROM kaf23 WHERE id = 12').fetchone()
+    kaf23_13 = conn.execute('SELECT * FROM kaf23 WHERE id = 13').fetchone()
+    kaf23_14 = conn.execute('SELECT * FROM kaf23 WHERE id = 14').fetchone()
+    kaf23_15 = conn.execute('SELECT * FROM kaf23 WHERE id = 15').fetchone()
+    # 4 class
+    kaf23_16 = conn.execute('SELECT * FROM kaf23 WHERE id = 16').fetchone()
+    kaf23_17 = conn.execute('SELECT * FROM kaf23 WHERE id = 17').fetchone()
+    kaf23_18 = conn.execute('SELECT * FROM kaf23 WHERE id = 18').fetchone()
+    kaf23_19 = conn.execute('SELECT * FROM kaf23 WHERE id = 19').fetchone()
+    kaf23_20 = conn.execute('SELECT * FROM kaf23 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf23.html', kaf23=kaf23)
+    return render_template('kaf23.html', kaf23_1=kaf23_1, kaf23_2=kaf23_2,
+                           kaf23_3=kaf23_3, kaf23_4=kaf23_4, kaf23_5=kaf23_5,
+                           kaf23_6=kaf23_6, kaf23_7=kaf23_7, kaf23_8=kaf23_8,
+                           kaf23_9=kaf23_9, kaf23_10=kaf23_10, kaf23_11=kaf23_11,
+                           kaf23_12=kaf23_12, kaf23_13=kaf23_13, kaf23_14=kaf23_14,
+                           kaf23_15=kaf23_15, kaf23_16=kaf23_16, kaf23_17=kaf23_17,
+                           kaf23_18=kaf23_18, kaf23_19=kaf23_19, kaf23_20=kaf23_20)
 
 
 @app.route('/table31')
 def table31():
     conn = get_db_connection()
-    kaf31 = conn.execute('SELECT * FROM kaf31').fetchall()
+    # 1 class
+    kaf31_1 = conn.execute('SELECT * FROM kaf31 WHERE id = 1').fetchone()
+    kaf31_2 = conn.execute('SELECT * FROM kaf31 WHERE id = 2').fetchone()
+    kaf31_3 = conn.execute('SELECT * FROM kaf31 WHERE id = 3').fetchone()
+    kaf31_4 = conn.execute('SELECT * FROM kaf31 WHERE id = 4').fetchone()
+    kaf31_5 = conn.execute('SELECT * FROM kaf31 WHERE id = 5').fetchone()
+    # 2 class
+    kaf31_6 = conn.execute('SELECT * FROM kaf31 WHERE id = 6').fetchone()
+    kaf31_7 = conn.execute('SELECT * FROM kaf31 WHERE id = 7').fetchone()
+    kaf31_8 = conn.execute('SELECT * FROM kaf31 WHERE id = 8').fetchone()
+    kaf31_9 = conn.execute('SELECT * FROM kaf31 WHERE id = 9').fetchone()
+    kaf31_10 = conn.execute('SELECT * FROM kaf31 WHERE id = 10').fetchone()
+    # 3 class
+    kaf31_11 = conn.execute('SELECT * FROM kaf31 WHERE id = 11').fetchone()
+    kaf31_12 = conn.execute('SELECT * FROM kaf31 WHERE id = 12').fetchone()
+    kaf31_13 = conn.execute('SELECT * FROM kaf31 WHERE id = 13').fetchone()
+    kaf31_14 = conn.execute('SELECT * FROM kaf31 WHERE id = 14').fetchone()
+    kaf31_15 = conn.execute('SELECT * FROM kaf31 WHERE id = 15').fetchone()
+    # 4 class
+    kaf31_16 = conn.execute('SELECT * FROM kaf31 WHERE id = 16').fetchone()
+    kaf31_17 = conn.execute('SELECT * FROM kaf31 WHERE id = 17').fetchone()
+    kaf31_18 = conn.execute('SELECT * FROM kaf31 WHERE id = 18').fetchone()
+    kaf31_19 = conn.execute('SELECT * FROM kaf31 WHERE id = 19').fetchone()
+    kaf31_20 = conn.execute('SELECT * FROM kaf31 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf31.html', kaf31=kaf31)
+    return render_template('kaf31.html', kaf31_1=kaf31_1, kaf31_2=kaf31_2,
+                           kaf31_3=kaf31_3, kaf31_4=kaf31_4, kaf31_5=kaf31_5,
+                           kaf31_6=kaf31_6, kaf31_7=kaf31_7, kaf31_8=kaf31_8,
+                           kaf31_9=kaf31_9, kaf31_10=kaf31_10, kaf31_11=kaf31_11,
+                           kaf31_12=kaf31_12, kaf31_13=kaf31_13, kaf31_14=kaf31_14,
+                           kaf31_15=kaf31_15, kaf31_16=kaf31_16, kaf31_17=kaf31_17,
+                           kaf31_18=kaf31_18, kaf31_19=kaf31_19, kaf31_20=kaf31_20)
 
 
 @app.route('/table32')
 def table32():
     conn = get_db_connection()
-    kaf32 = conn.execute('SELECT * FROM kaf32').fetchall()
+    # 1 class
+    kaf32_1 = conn.execute('SELECT * FROM kaf32 WHERE id = 1').fetchone()
+    kaf32_2 = conn.execute('SELECT * FROM kaf32 WHERE id = 2').fetchone()
+    kaf32_3 = conn.execute('SELECT * FROM kaf32 WHERE id = 3').fetchone()
+    kaf32_4 = conn.execute('SELECT * FROM kaf32 WHERE id = 4').fetchone()
+    kaf32_5 = conn.execute('SELECT * FROM kaf32 WHERE id = 5').fetchone()
+    # 2 class
+    kaf32_6 = conn.execute('SELECT * FROM kaf32 WHERE id = 6').fetchone()
+    kaf32_7 = conn.execute('SELECT * FROM kaf32 WHERE id = 7').fetchone()
+    kaf32_8 = conn.execute('SELECT * FROM kaf32 WHERE id = 8').fetchone()
+    kaf32_9 = conn.execute('SELECT * FROM kaf32 WHERE id = 9').fetchone()
+    kaf32_10 = conn.execute('SELECT * FROM kaf32 WHERE id = 10').fetchone()
+    # 3 class
+    kaf32_11 = conn.execute('SELECT * FROM kaf32 WHERE id = 11').fetchone()
+    kaf32_12 = conn.execute('SELECT * FROM kaf32 WHERE id = 12').fetchone()
+    kaf32_13 = conn.execute('SELECT * FROM kaf32 WHERE id = 13').fetchone()
+    kaf32_14 = conn.execute('SELECT * FROM kaf32 WHERE id = 14').fetchone()
+    kaf32_15 = conn.execute('SELECT * FROM kaf32 WHERE id = 15').fetchone()
+    # 4 class
+    kaf32_16 = conn.execute('SELECT * FROM kaf32 WHERE id = 16').fetchone()
+    kaf32_17 = conn.execute('SELECT * FROM kaf32 WHERE id = 17').fetchone()
+    kaf32_18 = conn.execute('SELECT * FROM kaf32 WHERE id = 18').fetchone()
+    kaf32_19 = conn.execute('SELECT * FROM kaf32 WHERE id = 19').fetchone()
+    kaf32_20 = conn.execute('SELECT * FROM kaf32 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf32.html', kaf32=kaf32)
+    return render_template('kaf32.html', kaf32_1=kaf32_1, kaf32_2=kaf32_2,
+                           kaf32_3=kaf32_3, kaf32_4=kaf32_4, kaf32_5=kaf32_5,
+                           kaf32_6=kaf32_6, kaf32_7=kaf32_7, kaf32_8=kaf32_8,
+                           kaf32_9=kaf32_9, kaf32_10=kaf32_10, kaf32_11=kaf32_11,
+                           kaf32_12=kaf32_12, kaf32_13=kaf32_13, kaf32_14=kaf32_14,
+                           kaf32_15=kaf32_15, kaf32_16=kaf32_16, kaf32_17=kaf32_17,
+                           kaf32_18=kaf32_18, kaf32_19=kaf32_19, kaf32_20=kaf32_20)
 
 
 @app.route('/table33')
 def table33():
     conn = get_db_connection()
-    kaf33 = conn.execute('SELECT * FROM kaf33').fetchall()
+    # 1 class
+    kaf33_1 = conn.execute('SELECT * FROM kaf33 WHERE id = 1').fetchone()
+    kaf33_2 = conn.execute('SELECT * FROM kaf33 WHERE id = 2').fetchone()
+    kaf33_3 = conn.execute('SELECT * FROM kaf33 WHERE id = 3').fetchone()
+    kaf33_4 = conn.execute('SELECT * FROM kaf33 WHERE id = 4').fetchone()
+    kaf33_5 = conn.execute('SELECT * FROM kaf33 WHERE id = 5').fetchone()
+    # 2 class
+    kaf33_6 = conn.execute('SELECT * FROM kaf33 WHERE id = 6').fetchone()
+    kaf33_7 = conn.execute('SELECT * FROM kaf33 WHERE id = 7').fetchone()
+    kaf33_8 = conn.execute('SELECT * FROM kaf33 WHERE id = 8').fetchone()
+    kaf33_9 = conn.execute('SELECT * FROM kaf33 WHERE id = 9').fetchone()
+    kaf33_10 = conn.execute('SELECT * FROM kaf33 WHERE id = 10').fetchone()
+    # 3 class
+    kaf33_11 = conn.execute('SELECT * FROM kaf33 WHERE id = 11').fetchone()
+    kaf33_12 = conn.execute('SELECT * FROM kaf33 WHERE id = 12').fetchone()
+    kaf33_13 = conn.execute('SELECT * FROM kaf33 WHERE id = 13').fetchone()
+    kaf33_14 = conn.execute('SELECT * FROM kaf33 WHERE id = 14').fetchone()
+    kaf33_15 = conn.execute('SELECT * FROM kaf33 WHERE id = 15').fetchone()
+    # 4 class
+    kaf33_16 = conn.execute('SELECT * FROM kaf33 WHERE id = 16').fetchone()
+    kaf33_17 = conn.execute('SELECT * FROM kaf33 WHERE id = 17').fetchone()
+    kaf33_18 = conn.execute('SELECT * FROM kaf33 WHERE id = 18').fetchone()
+    kaf33_19 = conn.execute('SELECT * FROM kaf33 WHERE id = 19').fetchone()
+    kaf33_20 = conn.execute('SELECT * FROM kaf33 WHERE id = 20').fetchone()
     conn.close()
-    return render_template('kaf33.html', kaf33=kaf33)
+    return render_template('kaf33.html', kaf33_1=kaf33_1, kaf33_2=kaf33_2,
+                           kaf33_3=kaf33_3, kaf33_4=kaf33_4, kaf33_5=kaf33_5,
+                           kaf33_6=kaf33_6, kaf33_7=kaf33_7, kaf33_8=kaf33_8,
+                           kaf33_9=kaf33_9, kaf33_10=kaf33_10, kaf33_11=kaf33_11,
+                           kaf33_12=kaf33_12, kaf33_13=kaf33_13, kaf33_14=kaf33_14,
+                           kaf33_15=kaf33_15, kaf33_16=kaf33_16, kaf33_17=kaf33_17,
+                           kaf33_18=kaf33_18, kaf33_19=kaf33_19, kaf33_20=kaf33_20)
 
 
 if __name__ == '__main__':
