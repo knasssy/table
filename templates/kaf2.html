@@ -1,43 +1,202 @@
 {% extends 'base.html' %}
 
+{% block link%}
+<link rel="stylesheet" href="static/kaf2.css">
+{%endblock%}
+
 {% block table%}
 <table id="asu">
     <tr>
         <td>1 пара</td>
         <td>
-            <span class="badge badge-primary">{{ kaf2['classroom'] }}</span>
+            <span class="badge badge-primary">{{ kaf2_1['classroom'] }}</span>
             <br>
-            <span class="badge badge-primary">{{ kaf2['platoon'] }}</span>
+            <span class="badge badge-primary">{{ kaf2_1['platoon'] }}</span>
             <br>
-            <span class="badge badge-primary">{{ kaf2['teacher'] }}</span>
+            <span class="badge badge-primary">{{ kaf2_1['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_1['lesson'] }}</span>
         </td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_2['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_2['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_2['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_2['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_3['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_3['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_3['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_3['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_4['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_4['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_4['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_4['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_5['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_5['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_5['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_5['lesson'] }}</span>
+        </td>
     </tr>
     <tr>
         <td>2 пара</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_6['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_6['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_6['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_6['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_7['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_7['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_7['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_7['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_8['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_8['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_8['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_8['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_9['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_9['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_9['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_9['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_10['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_10['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_10['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_10['lesson'] }}</span>
+        </td>
     </tr>
     <tr>
         <td>3 пара</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_11['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_11['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_11['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_11['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_12['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_12['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_12['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_12['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_13['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_13['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_13['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_13['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_14['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_14['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_14['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_14['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_15['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_15['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_15['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_15['lesson'] }}</span>
+        </td>
     </tr>
     <tr>
         <td>4 пара</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_16['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_16['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_16['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_16['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_17['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_17['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_17['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_17['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_18['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_18['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_18['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_18['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_19['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_19['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_19['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_19['lesson'] }}</span>
+        </td>
+        <td>
+            <span class="badge badge-primary">{{ kaf2_20['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_20['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_20['teacher'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ kaf2_20['lesson'] }}</span>
+        </td>
     </tr>
 </table>
 {% endblock %}
