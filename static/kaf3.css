@@ -49,12 +49,9 @@ tr:hover td {
     color: black;
 }
 
-#vitti{
+#vitti {
     position: relative;
     bottom: 16em;
     right: -9.9%;
-    height:280px;
-}
-#calendar{
-    color :#707981;
+    height: 280px;
 }
