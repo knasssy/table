@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block link%}
+<link rel="stylesheet" href="static/kaf11.css">
+{%endblock%}
+{% block table%}
+<table id="asu">
+    <tr>
+        <td>1 пара</td>
+        <td> {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
+        <td>
+            {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
+        <td>
+            {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
+        <td>
+            {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
+        <td>
+            {% for post in posts %}
+            <span class="badge badge-primary">{{ post['classroom'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['platoon'] }}</span>
+            <br>
+            <span class="badge badge-primary">{{ post['teacher'] }}</span>
+            {% endfor %}
+        </td>
+    </tr>
+    <tr>
+        <td>2 пара</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3 пара</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4 пара</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+{% endblock %}
